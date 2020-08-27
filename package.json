@@ -4,8 +4,17 @@
   "description": "This is open-source project of redux thunk loading middleware",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src/index.js --config-file ./babel.config.json --out-file index.js"
   },
   "author": "Vu Phan",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "7.10.5",
+    "@babel/core": "7.11.4",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.11.0",
+    "babel-plugin-transform-require-context": "^0.1.1"
+  }
 }
